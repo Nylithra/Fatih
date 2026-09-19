@@ -1,0 +1,9 @@
+services:
+  fatih:
+    build: .
+    ports:
+      - "${FATIH_PORT:-3000}:3000"
+    env_file:
+      - path: .env
+        required: false
+    restart: unless-stopped
