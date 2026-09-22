@@ -1,5 +1,5 @@
 /**
- * FATİH veri kataloğu — sunucu ve istemcinin paylaştığı tanımlar.
+ * Gökberk veri kataloğu — sunucu ve istemcinin paylaştığı tanımlar.
  *
  * Her veri seti; haritada nasıl çizileceğini, detay kartında hangi alanların
  * gösterileceğini ve filtre panelinde hangi alanlara göre süzülebileceğini tanımlar.

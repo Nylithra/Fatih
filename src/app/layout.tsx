@@ -7,7 +7,7 @@ const sans = Inter({ subsets: ["latin", "latin-ext"], variable: "--font-sans" })
 const mono = JetBrains_Mono({ subsets: ["latin", "latin-ext"], variable: "--font-mono" });
 
 export const metadata: Metadata = {
-  title: "FATİH — Türkiye Durum Farkındalığı",
+  title: "GÖKBERK — Türkiye Durum Farkındalığı",
   description:
     "Türkiye geneli gerçek zamanlı açık kaynak istihbarat paneli: depremler, hava trafiği, haberler, yangınlar, hava durumu ve kritik altyapı tek ekranda.",
 };

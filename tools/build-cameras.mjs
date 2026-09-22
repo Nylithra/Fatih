@@ -9,7 +9,7 @@
 // Kullanım: node tools/build-cameras.mjs
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 
-const UA = { "User-Agent": "Mozilla/5.0 (compatible; FATIH-OSINT/0.1)" };
+const UA = { "User-Agent": "Mozilla/5.0 (compatible; GOKBERK-OSINT/0.1)" };
 
 // slug → [enlem, boylam]
 const IBB_COORDS = {
@@ -153,7 +153,7 @@ async function geocode(query, fallback, bbox) {
     const qs = new URLSearchParams({ q: query, format: "json", limit: "1", countrycodes: "tr", ...(bbox ? { viewbox: bbox, bounded: "1" } : {}) });
     try {
       const r = await fetch(`https://nominatim.openstreetmap.org/search?${qs}`, {
-        headers: { "User-Agent": "FATIH-OSINT/0.1 (camera catalog build script)", "Accept-Language": "tr" },
+        headers: { "User-Agent": "GOKBERK-OSINT/0.1 (camera catalog build script)", "Accept-Language": "tr" },
       });
       const j = r.ok ? await r.json() : [];
       geoCache[query] = j[0] ? [Number(j[0].lat), Number(j[0].lon)] : null;

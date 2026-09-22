@@ -95,7 +95,7 @@ export function CameraModal({
             ) : (
               <p>
                 Bu yayını belediye yalnızca kendi sitesinde izlenmek üzere yayınlıyor (süreli token, şifreli akış, referer ya da
-                çerçeve kısıtlaması). FATİH bu kısıtlamayı aşmaz; yayını resmî sayfada izleyebilirsiniz.
+                çerçeve kısıtlaması). Gökberk bu kısıtlamayı aşmaz; yayını resmî sayfada izleyebilirsiniz.
               </p>
             )}
             <a className="link-btn" href={camera.page} target="_blank" rel="noreferrer noopener">

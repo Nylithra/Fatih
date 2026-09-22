@@ -1,4 +1,4 @@
-# FATİH — Türkiye Durum Farkındalığı Paneli
+# GÖKBERK — Türkiye Durum Farkındalığı Paneli
 
 Türkiye geneli için gerçek zamanlı, açık kaynak istihbarat (OSINT) paneli.
 [OSIRIS](https://github.com/kvnloo/osiris)'in dünya ölçeğinde yaptığını Türkiye'nin 81 iline odaklanarak yapar:
@@ -50,7 +50,7 @@ Sol paneldeki **Katmanlar** sekmesinden açılır; hepsi **Filtreler** sekmesind
 | ESHOT durakları (~11.800) | İzmir | İzmir BB açık veri — `npm run data:izmir` | statik |
 | İSPARK otoparkları — anlık doluluk | İstanbul | İBB açık veri API | 2 dk |
 | Akıllı otoparklar — anlık doluluk | İzmir | İzmir BB · İZUM | 2 dk |
-| Belediye canlı kameraları (203 kamera, 12 il) | İstanbul, Kahramanmaraş, Nevşehir (FATİH içinde canlı) · Kocaeli, Kayseri, Erzurum, Trabzon, Rize, Alanya (resmî sayfaya bağlantı) · Bursa, Tekirdağ, Balıkesir (KVKK nedeniyle geçici kapalı) | Belediyelerin resmî yayınları — `npm run data:cameras` | statik liste |
+| Belediye canlı kameraları (203 kamera, 12 il) | İstanbul, Kahramanmaraş, Nevşehir (Gökberk içinde canlı) · Kocaeli, Kayseri, Erzurum, Trabzon, Rize, Alanya (resmî sayfaya bağlantı) · Bursa, Tekirdağ, Balıkesir (KVKK nedeniyle geçici kapalı) | Belediyelerin resmî yayınları — `npm run data:cameras` | statik liste |
 | Afet ve acil durum toplanma alanları | İzmir | İzmir BB | günlük |
 | Hastaneler (~1.550) — tür, branş, acil servis, telefon, web, adres | Türkiye (81 il) | OpenStreetMap (ODbL) — `npm run data:hospitals` | statik |
 | Nöbetçi eczaneler | İzmir | İzmir BB | saatlik |
@@ -89,7 +89,7 @@ Yeni bir açık veri kaynağı eklemek için `src/catalog/meta.ts`'e tanım, `sr
 
 ### Kamera yayınları hakkında
 
-FATİH yalnızca belediyelerin başka sitelerden oynatılmasına açıkça izin verdiği yayınları (şifresiz HLS, CORS açık, token/referer kontrolü yok) kendi içinde oynatır. Süreli imzalı token, şifreli akış (AES anahtarı alan adına kilitli), tek kullanımlık bilet, referer ya da çerçeve (X-Frame-Options/CSP) kısıtlaması olan yayınlar için bu kısıtlamalar aşılmaz; kamera haritada gösterilir ve belediyenin resmî izleme sayfasına bağlantı verilir. KVKK'nın 23.06.2026 tarihli duyurusu sonrası yayınları kapatan belediyeler açıklamasıyla listelenir. Derleme betiği Bursa'daki kapanmayı otomatik algılar; yayınlar yeniden açılınca `npm run data:cameras` ile güncellenebilir.
+Gökberk yalnızca belediyelerin başka sitelerden oynatılmasına açıkça izin verdiği yayınları (şifresiz HLS, CORS açık, token/referer kontrolü yok) kendi içinde oynatır. Süreli imzalı token, şifreli akış (AES anahtarı alan adına kilitli), tek kullanımlık bilet, referer ya da çerçeve (X-Frame-Options/CSP) kısıtlaması olan yayınlar için bu kısıtlamalar aşılmaz; kamera haritada gösterilir ve belediyenin resmî izleme sayfasına bağlantı verilir. KVKK'nın 23.06.2026 tarihli duyurusu sonrası yayınları kapatan belediyeler açıklamasıyla listelenir. Derleme betiği Bursa'daki kapanmayı otomatik algılar; yayınlar yeniden açılınca `npm run data:cameras` ile güncellenebilir.
 
 ## İsteğe bağlı anahtarlar
 

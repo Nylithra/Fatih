@@ -18,7 +18,7 @@ async function overpass(query) {
     try {
       const res = await fetch(url, {
         method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded", "User-Agent": "FATIH-OSINT/0.1" },
+        headers: { "Content-Type": "application/x-www-form-urlencoded", "User-Agent": "GOKBERK-OSINT/0.1" },
         body: new URLSearchParams({ data: query }),
       });
       if (!res.ok) throw new Error(`${res.status}`);

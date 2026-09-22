@@ -6,7 +6,7 @@ export type Camera = {
   plate: number;
   name: string;
   provider: string;
-  /** hls: FATİH içinde oynatılır · embed: belediyenin resmî oynatıcısı gömülür · page: yalnızca resmî sayfaya bağlantı */
+  /** hls: Gökberk içinde oynatılır · embed: belediyenin resmî oynatıcısı gömülür · page: yalnızca resmî sayfaya bağlantı */
   kind: "hls" | "embed" | "page";
   stream: string | null;
   embed?: string | null;

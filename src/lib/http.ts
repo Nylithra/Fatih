@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import type { Cached } from "./cache";
 
-const UA = "Mozilla/5.0 (compatible; FATIH-OSINT/0.1; +https://github.com/)";
+const UA = "Mozilla/5.0 (compatible; GOKBERK-OSINT/0.1; +https://github.com/)";
 
 export async function fetchWithTimeout(url: string, init: RequestInit & { timeoutMs?: number } = {}) {
   const { timeoutMs = 15000, headers, ...rest } = init;

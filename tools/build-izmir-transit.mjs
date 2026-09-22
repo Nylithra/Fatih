@@ -12,7 +12,7 @@ const out = new URL("../public/transit/izmir/", import.meta.url);
 mkdirSync(new URL("routes/", out), { recursive: true });
 
 async function csv(name) {
-  const res = await fetch(BASE + name, { headers: { "User-Agent": "FATIH-OSINT/0.1" } });
+  const res = await fetch(BASE + name, { headers: { "User-Agent": "GOKBERK-OSINT/0.1" } });
   if (!res.ok) throw new Error(`${name}: ${res.status}`);
   const text = (await res.text()).replace(/^﻿/, "");
   const [head, ...rows] = text.split(/\r?\n/).filter(Boolean);
