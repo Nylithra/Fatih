@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from "react";
 
+const PREFIX = "gokberk:";
+
 /**
  * Tarayıcıda (localStorage) hatırlanan durum. Depolama erişilemezse (gizli pencere vb.)
  * sessizce bellek içi duruma düşer. İlk render sunucuyla uyumlu olsun diye değer mount sonrası okunur;
@@ -13,7 +15,13 @@ export function usePersistentState<T>(key: string, initial: T) {
 
   useEffect(() => {
     try {
-      const raw = localStorage.getItem(`fatih:${key}`);
+      // Eski "fatih:" önekiyle kaydedilmiş ayarları bir kereliğine yeni ada taşı
+      const legacy = localStorage.getItem(`fatih:${key}`);
+      if (legacy != null && localStorage.getItem(`${PREFIX}${key}`) == null) {
+        localStorage.setItem(`${PREFIX}${key}`, legacy);
+        localStorage.removeItem(`fatih:${key}`);
+      }
+      const raw = localStorage.getItem(`${PREFIX}${key}`);
       if (raw) {
         const saved = JSON.parse(raw) as T;
         setValue((v) => (typeof v === "object" && v && !Array.isArray(v) ? { ...v, ...saved } : saved));
@@ -27,7 +35,7 @@ export function usePersistentState<T>(key: string, initial: T) {
   useEffect(() => {
     if (!hydrated) return;
     try {
-      localStorage.setItem(`fatih:${key}`, JSON.stringify(value));
+      localStorage.setItem(`${PREFIX}${key}`, JSON.stringify(value));
     } catch {
       /* depolama yok */
     }

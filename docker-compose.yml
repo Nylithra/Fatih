@@ -1,8 +1,8 @@
 services:
-  fatih:
+  gokberk:
     build: .
     ports:
-      - "${FATIH_PORT:-3000}:3000"
+      - "${GOKBERK_PORT:-3000}:3000"
     env_file:
       - path: .env
         required: false

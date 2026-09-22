@@ -140,7 +140,7 @@ export default function MapView(props: Props) {
       attributionControl: { compact: true },
     });
     mapRef.current = map;
-    if (process.env.NODE_ENV !== "production") (window as unknown as { __fatihMap: MLMap }).__fatihMap = map;
+    if (process.env.NODE_ENV !== "production") (window as unknown as { __gokberkMap: MLMap }).__gokberkMap = map;
     map.on("error", (e) => console.warn("[harita]", e.error?.message ?? e));
     map.addControl(new NavigationControl({ visualizePitch: true }), "bottom-right");
     map.addControl(new ScaleControl({ unit: "metric" }), "bottom-right");

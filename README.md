@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🇹🇷 ⬡ FATİH
+# 🇹🇷 ⬡ GÖKBERK
 
 ### Türkiye Durum Farkındalığı Paneli
 
@@ -22,9 +22,9 @@
 
 ## Genel Bakış
 
-**FATİH**, Türkiye genelindeki açık ve kamuya açık veri kaynaklarını tek bir arayüzde birleştiren gerçek zamanlı bir **Açık Kaynak İstihbarat (OSINT) ve durum farkındalığı platformudur.**
+**GÖKBERK**, Türkiye genelindeki açık ve kamuya açık veri kaynaklarını tek bir arayüzde birleştiren gerçek zamanlı bir **Açık Kaynak İstihbarat (OSINT) ve durum farkındalığı platformudur.**
 
-FATİH, dünya ölçeğindeki OSINT platformlarının yaklaşımını Türkiye'ye odaklayarak **81 ilin tamamını** tek bir interaktif harita üzerinde izlemeyi amaçlar.
+GÖKBERK, dünya ölçeğindeki OSINT platformlarının yaklaşımını Türkiye'ye odaklayarak **81 ilin tamamını** tek bir interaktif harita üzerinde izlemeyi amaçlar.
 
 Platform;
 
@@ -78,7 +78,7 @@ Temel katmanların büyük bölümü **API anahtarı gerektirmeden** çalışır
 
 ```text
 ┌─────────────────────────────────────────────────────┐
-│                    FATİH İSTEMCİ                    │
+│                    GÖKBERK İSTEMCİ                    │
 │                                                     │
 │  ┌────────────┐  ┌────────────┐  ┌──────────────┐  │
 │  │  MapLibre  │  │    HUD     │  │    Arama     │  │
@@ -109,7 +109,7 @@ Temel katmanların büyük bölümü **API anahtarı gerektirmeden** çalışır
 
 ## 🌍 Gerçek Zamanlı Türkiye Haritası
 
-FATİH, farklı kaynaklardan gelen verileri tek bir interaktif Türkiye haritasında birleştirir.
+GÖKBERK, farklı kaynaklardan gelen verileri tek bir interaktif Türkiye haritasında birleştirir.
 
 ### Harita Katmanları
 
@@ -136,7 +136,7 @@ Her katman bağımsız olarak açılıp kapatılabilir ve filtrelenebilir.
 
 # 🚨 Uyarı Sistemi
 
-FATİH, önemli olabilecek olayları otomatik olarak önceliklendirir.
+GÖKBERK, önemli olabilecek olayları otomatik olarak önceliklendirir.
 
 Örneğin:
 
@@ -147,7 +147,7 @@ FATİH, önemli olabilecek olayları otomatik olarak önceliklendirir.
 * Kötü hava kalitesi
 * Jeomanyetik fırtına koşulları
 
-> FATİH bir resmî acil durum veya uyarı sistemi değildir. Veriler yalnızca durum farkındalığı amacıyla sunulur.
+> GÖKBERK bir resmî acil durum veya uyarı sistemi değildir. Veriler yalnızca durum farkındalığı amacıyla sunulur.
 
 ---
 
@@ -216,7 +216,7 @@ Gösterilebilen bilgiler:
 
 # 📰 Haber İstihbaratı
 
-FATİH, çeşitli haber kaynaklarının RSS akışlarını takip eder.
+GÖKBERK, çeşitli haber kaynaklarının RSS akışlarını takip eder.
 
 Mevcut kaynaklar:
 
@@ -289,7 +289,7 @@ Hava kalitesi il bazında haritada görselleştirilebilir.
 
 # ☀️ Uzay Hava Durumu
 
-FATİH, Dünya'daki durum farkındalığının yanında temel uzay hava durumu verilerini de takip eder.
+GÖKBERK, Dünya'daki durum farkındalığının yanında temel uzay hava durumu verilerini de takip eder.
 
 Gösterilen veriler:
 
@@ -305,7 +305,7 @@ Gösterilen veriler:
 
 # 🚍 Toplu Taşıma
 
-FATİH'in toplu taşıma sistemi giderek genişleyen bir veri katmanına sahiptir.
+GÖKBERK'in toplu taşıma sistemi giderek genişleyen bir veri katmanına sahiptir.
 
 ## 🚇 Raylı Sistemler ve Vapur Hatları
 
@@ -373,7 +373,7 @@ npm run data:izmir
 
 # 📹 Belediye Kamera Ağı
 
-FATİH, kamuya açık belediye kamera yayınlarını harita üzerinde bir araya getirir.
+GÖKBERK, kamuya açık belediye kamera yayınlarını harita üzerinde bir araya getirir.
 
 Kapsama giren bölgeler arasında:
 
@@ -414,7 +414,7 @@ Kamera desteği:
 
 ### Kamera Yayınları Hakkında
 
-FATİH, yalnızca yayın sahibinin kamuya açık olarak erişime sunduğu ve teknik olarak gömülmesine izin verilen yayınları kendi içerisinde oynatır.
+GÖKBERK, yalnızca yayın sahibinin kamuya açık olarak erişime sunduğu ve teknik olarak gömülmesine izin verilen yayınları kendi içerisinde oynatır.
 
 Aşağıdaki güvenlik mekanizmaları aşılmaz:
 
@@ -431,7 +431,7 @@ Gömülemeyen yayınlar için uygun olduğunda ilgili belediyenin **resmî izlem
 
 # 🏥 Hastaneler
 
-FATİH, Türkiye genelinde yaklaşık:
+GÖKBERK, Türkiye genelinde yaklaşık:
 
 **1.550 sağlık tesisi**
 
@@ -469,7 +469,7 @@ Desteklenen belediyelerde anlık otopark doluluk verileri gösterilir.
 
 # 🔎 Birleşik Arama
 
-FATİH'in tüm veri katmanlarına tek bir arama sistemi üzerinden ulaşılabilir.
+GÖKBERK'in tüm veri katmanlarına tek bir arama sistemi üzerinden ulaşılabilir.
 
 Aramayı açmak için:
 
@@ -606,7 +606,7 @@ Filtre seçimleri tarayıcıda saklanır.
 
 # ⚡ Performans
 
-FATİH, yüksek miktarda harita verisini akıcı şekilde göstermek için GPU hızlandırmalı bir mimari kullanır.
+GÖKBERK, yüksek miktarda harita verisini akıcı şekilde göstermek için GPU hızlandırmalı bir mimari kullanır.
 
 ### Performans teknikleri
 
@@ -799,7 +799,7 @@ OpenSky kimlik bilgileri, desteklenen durumlarda daha yüksek istek limitleri sa
 
 # 🗃️ Veri Kataloğu
 
-FATİH'in veri kataloğu, yeni açık veri kaynaklarının sisteme kolayca eklenebilmesi için modüler şekilde tasarlanmıştır.
+GÖKBERK'in veri kataloğu, yeni açık veri kaynaklarının sisteme kolayca eklenebilmesi için modüler şekilde tasarlanmıştır.
 
 Yeni bir veri kaynağı eklemek için temel olarak:
 
@@ -845,7 +845,7 @@ Harita katmanı, detay kartı, arama ve filtre sistemi bu katalog yapısı üzer
 
 # 📚 Veri Kaynakları ve Atıflar
 
-FATİH, farklı kurum ve topluluklar tarafından sağlanan açık ve kamuya açık veri kaynaklarını kullanır.
+GÖKBERK, farklı kurum ve topluluklar tarafından sağlanan açık ve kamuya açık veri kaynaklarını kullanır.
 
 Başlıca kaynaklar:
 
@@ -884,7 +884,7 @@ Her veri kaynağının kendi kullanım koşulları ve lisansları geçerlidir.
 
 # ⚠️ Sorumluluk Reddi
 
-FATİH, **resmî bir afet, güvenlik, meteoroloji veya acil durum uyarı sistemi değildir.**
+GÖKBERK, **resmî bir afet, güvenlik, meteoroloji veya acil durum uyarı sistemi değildir.**
 
 Gösterilen bilgiler üçüncü taraf açık veri kaynaklarından alınır ve gecikme, eksiklik veya yanlışlık içerebilir.
 
@@ -908,7 +908,7 @@ dosyasına bakabilirsiniz.
 
 <div align="center">
 
-# 🇹🇷 FATİH
+# 🇹🇷 GÖKBERK
 
 ### Türkiye'yi tek haritada gör.
 

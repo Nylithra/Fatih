@@ -1,8 +1,8 @@
 {
-  "name": "fatih",
+  "name": "gokberk",
   "version": "0.1.0",
   "private": true,
-  "description": "FATİH — Türkiye Gerçek Zamanlı Durum Farkındalığı ve Açık Kaynak İstihbarat Paneli",
+  "description": "GÖKBERK — Türkiye Gerçek Zamanlı Durum Farkındalığı ve Açık Kaynak İstihbarat Paneli",
   "scripts": {
     "dev": "next dev -p 3000",
     "build": "next build",

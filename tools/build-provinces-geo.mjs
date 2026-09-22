@@ -1,4 +1,4 @@
-// geoBoundaries TUR ADM1 (OSM kaynaklı, CC BY-SA 2.0) verisini FATİH için hazırlar:
+// geoBoundaries TUR ADM1 (OSM kaynaklı, CC BY-SA 2.0) verisini Gökberk için hazırlar:
 // - il adlarını plaka koduyla eşler
 // - koordinatları 4 ondalığa yuvarlayarak boyutu küçültür
 // Kullanım: node tools/build-provinces-geo.mjs

@@ -357,7 +357,7 @@ function CameraList({ wall, onCamera, onAddToWall, onOpenWall, onFly }: Props) {
           <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Kamera, şehir veya yer ara…" />
         </label>
         <label className="check">
-          <input type="checkbox" checked={onlyLive} onChange={() => setOnlyLive((v) => !v)} /> Yalnız FATİH içinde izlenebilenler
+          <input type="checkbox" checked={onlyLive} onChange={() => setOnlyLive((v) => !v)} /> Yalnız Gökberk içinde izlenebilenler
         </label>
       </div>
       {wall.length === 0 && (
@@ -395,7 +395,7 @@ function CameraList({ wall, onCamera, onAddToWall, onOpenWall, onFly }: Props) {
                         {c.note
                           ? "Yayın geçici olarak kapalı"
                           : c.kind === "hls"
-                            ? "Canlı · FATİH içinde"
+                            ? "Canlı · Gökberk içinde"
                             : c.kind === "embed"
                               ? "Canlı · belediyenin resmî oynatıcısı"
                               : "Resmî sayfada izlenir"}

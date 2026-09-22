@@ -51,7 +51,7 @@ export default function TopBar({
           </svg>
         </span>
         <div className="brand-text">
-          <h1>FATİH</h1>
+          <h1>GÖKBERK</h1>
           <p>Türkiye Durum Farkındalığı</p>
         </div>
       </div>
